@@ -1,0 +1,46 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.mainMenu {
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include blueMedium();
+    @include dropShadow();
+}
+
+.mainMenu .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.emblem {
+    padding-right: 10px;
+}
+
+.emblem img {
+    width: 45px;
+}
+
+.title p {
+    font-size: 1.8em;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav > div {
+    padding-right: 15px;
+}
+
+.nav > div:last-child {
+    padding-right: 0;
+}

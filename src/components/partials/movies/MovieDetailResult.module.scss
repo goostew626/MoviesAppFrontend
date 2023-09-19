@@ -1,0 +1,112 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.movieDetailResult {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.movie {
+    display: flex;
+    @include blueMedium();
+    @include borderRadius();
+    @include dropShadow();
+}
+
+.poster > div {
+    width: 300px;
+    aspect-ratio: 2/3;
+    background-image: var(--poster-image, none);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    @include borderRadius();
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.info .text {
+    display: table;
+}
+
+.info .text > div {
+    display: table-row;
+}
+
+.info .text > div > div {
+    display: table-cell;
+    padding-bottom: 6px;
+}
+
+.info .text > div:last-child > div {
+    padding-bottom: 0;
+}
+
+.info .text {
+    padding-top: 10px;
+}
+
+.info .text > div > div > p {
+    padding-right: 10px;
+    font-size: 1.1em;
+}
+
+.info .text .title p {
+    @include fontWhiteTrans();
+}
+
+.info .overview {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.info .overview p {
+    padding-right: 10px;
+}
+
+.noMovie {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include blueMedium();
+    @include borderRadius();
+    @include dropShadow();
+}
+
+@media only screen and (max-width:800px) {
+    .movie {
+        flex-wrap: wrap;
+    }
+
+    .poster {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include blackTrans();
+        @include borderRadiusTop();
+    }
+
+    .poster > div {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info .text {
+        padding-top: 0;
+    }
+
+    .info .text > div > div > p {
+        padding-right: 10px;
+        font-size: 1.0em;
+    }
+}

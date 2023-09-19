@@ -1,0 +1,27 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.mainButton {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include plumMedium();
+    @include borderRadius();
+    @include borderLine();
+}
+
+.mainButton:active {
+    @include plumDark();
+}
+
+.mainButton > div {
+    display: flex;
+}
+
+.mainButton > div > div:first-child {
+    padding-left: 10px;
+}
+
+.mainButton > div > div {
+    padding-right: 10px;
+}

@@ -1,0 +1,15 @@
+@mixin dropShadow() {
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+@mixin borderLine() {
+    border: solid 2px #ffffff;
+}
+
+@mixin borderRadius() {
+    border-radius: 8px;
+}
+
+@mixin borderRadiusTop() {
+    border-radius: 8px 8px 0 0;
+}

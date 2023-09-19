@@ -1,0 +1,17 @@
+@import "../../styles/Colors.module.scss";
+@import "../../styles/Generic.module.scss";
+
+.notFound {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include blueMedium();
+    @include borderRadius();
+    @include dropShadow();
+}

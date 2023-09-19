@@ -1,0 +1,64 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.moviesSearchResults {
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+.movie {
+    display: flex;
+    margin-bottom: 30px;
+    @include blueMedium();
+    @include borderRadius();
+    @include dropShadow();
+}
+
+.movie:last-child {
+    margin-bottom: 0;
+}
+
+.poster > div {
+    width: 100px;
+    aspect-ratio: 2/3;
+    background-image: var(--poster-image, none);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333333;
+    @include borderRadius();
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.info .text {
+    display: table;
+}
+
+.info .text > div {
+    display: table-row;
+}
+
+.info .text > div > div {
+    display: table-cell;
+    padding-bottom: 6px;
+}
+
+.info .text > div:last-child > div {
+    padding-bottom: 0;
+}
+
+.info .text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info .text > div > div > p {
+    padding-right: 10px;
+}
+
+.info .text .title p {
+    @include fontWhiteTrans();
+}

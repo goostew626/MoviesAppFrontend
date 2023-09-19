@@ -1,0 +1,19 @@
+@import "../../../styles/Colors.module.scss";
+
+.paginator {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include greyLight();
+}
+
+.paginator .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info p {
+    @include fontBlack();
+}

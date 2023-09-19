@@ -1,0 +1,31 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.messages {
+    position: fixed;
+    bottom: 70px;
+    right: calc(0px + 50% - (600px - 30px));
+    max-width: 350px;
+}
+
+.notification {
+    display: flex;
+    padding: 5px;
+    @include redMedium();
+    @include dropShadow();
+    @include borderRadius();
+    @include borderLine();
+}
+
+.notification p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media only screen and (max-width:1200px) {
+    .messages {
+        right: 30px;
+    }
+}

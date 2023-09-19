@@ -1,0 +1,19 @@
+@import "../../../styles/Colors.module.scss";
+@import "../../../styles/Generic.module.scss";
+
+.messageButton {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include redDark();
+    @include borderRadius();
+}
+
+.messageButton:active {
+    @include redMedium();
+}
+
+.messageButton > div {
+    padding-left: 8px;
+    padding-right: 8px;
+}
