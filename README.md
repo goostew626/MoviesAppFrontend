@@ -21,6 +21,18 @@ Compile it for deployment with
 npm run build
 ```
 
+Environment Files will need to be created inside of the Application Root as
+
+.env.development
+```
+REACT_APP_BACKEND_URL=*Appropriate Backend URL*
+```
+
+.env.production
+```
+REACT_APP_BACKEND_URL=*Appropriate Backend URL*
+```
+
 ## Author
 
 Trent Hawke
