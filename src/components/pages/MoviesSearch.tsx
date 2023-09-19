@@ -60,15 +60,10 @@ const MoviesSearch:React.FC<{}> = () => {
         getMoviesSearchResults(movieTitle, page);
     }
 
-    console.log("moo");
-    console.log(process.env.REACT_APP_BACKEND_URL);
-
     const getMoviesSearchResults = (movieTitle:string, page:number) => {
         const internalApi:InternalApi = new InternalApi();
 
-        // moo
         internalApi.init()
-            //.setUrl(`search/${movieTitle}/${page}`);
             .setUrl(`${process.env.REACT_APP_BACKEND_URL}search/${movieTitle}/${page}`);
 
         internalApi.send()

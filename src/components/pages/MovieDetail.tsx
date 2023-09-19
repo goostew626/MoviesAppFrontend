@@ -54,7 +54,7 @@ const MovieDetail:React.FC<{}> = () => {
         const internalApi:InternalApi = new InternalApi();
 
         internalApi.init()
-            .setUrl(`movies/${movieId}`);
+            .setUrl(`${process.env.REACT_APP_BACKEND_URL}movies/${movieId}`);
 
         internalApi.send()
             .then((resolve:any) => {
